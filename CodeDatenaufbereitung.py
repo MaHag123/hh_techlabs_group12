@@ -12,7 +12,7 @@ import re
 response = requests.get("https://iot.hamburg.de/v1.1/Datastreams?$filter=properties/serviceName eq 'HH_STA_AutomatisierteVerkehrsmengenerfassung' and properties/layerName eq 'Anzahl_Kfz_Zaehlstelle_1-Tag'&$top=500")
   #--> API Status Code 200: Everything went okay
 print(response.json())
-  
+print("hello")
 #%%
 #Turn the JSON response in usable data
 #Extract the data from the the response object
